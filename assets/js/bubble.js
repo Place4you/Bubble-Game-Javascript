@@ -1,12 +1,24 @@
 function play(){
+    document.getElementById("start-game").style.display = "none";
+    
+
     let timer = 10;
     let score = 0;
     let rnhit = 0;
     let interval; 
-  
+    var scorepoints;
+    let backgrounds;
+
+    function backsound(){
+        backgrounds = new Audio("./assets/audio/background.mp3")
+        backgrounds.play();
+    }
+    
+    
 
 
     function runTimer() {
+        backsound();
         interval = setInterval(function() {
             if (timer > 0) {
                 console.log(timer);
@@ -21,11 +33,11 @@ function play(){
             }
         }, 1000)
     }
-
+// restart the game
     document.querySelector("#game-over button").onclick = function() {
         resetGame(); // Reset the game state
         document.getElementById("game-over").style.display = "none";
-        startgame(); // Start the game again
+        startgame();
     };
 
     function resetGame() {
@@ -87,10 +99,9 @@ function incresescore(){
             document.querySelector("#score").textContent = score;
 
             // create a new audio instance
-            var audio = new Audio("./assets/audio/score.mp3");
+            scorepoints = new Audio("./assets/audio/score.mp3");
             // play the audio
-            audio.play();
-            
+            scorepoints.play();
 
             makeBubble();
             hitcunt();
@@ -105,11 +116,12 @@ function incresescore(){
 
 
 function startgame(){
-    // resetvar();
     makeBubble();
     runTimer();
     hitcunt();
     incresescore();
+    backsound();
+
    
     // over();
 }
@@ -119,7 +131,11 @@ startgame();
 
 }
 
+// start the game
+document.querySelector("#start-game").onclick = function() {
+    play(); // Reset the game state
+
+};
 
 
-play();
 

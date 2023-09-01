@@ -35,6 +35,7 @@ body {
   margin: auto;
   width: 80%;
   height: 600px;
+  box-shadow: 2px 5px 15px 2px;
   background-color: springgreen;
   border: 3px solid green;
   border-radius: 15px;
@@ -42,6 +43,52 @@ body {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+}
+#game-menu #start-game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  height: 600px;
+  row-gap: 5%;
+  background-color: springgreen;
+  border: 3px solid green;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 99;
+}
+#game-menu #start-game h1 {
+  font-size: 2rem;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+#game-menu #start-game h3 {
+  font-size: 1.3rem;
+  -webkit-text-decoration: italic;
+          text-decoration: italic;
+}
+#game-menu #start-game button {
+  font-family: Verdana;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: 2px solid black;
+  color: green;
+  font-weight: bolder;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#game-menu #start-game button:hover {
+  cursor: pointer;
 }
 
 #ptop {
