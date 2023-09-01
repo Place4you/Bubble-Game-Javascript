@@ -86,9 +86,12 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  box-shadow: 3px 3px 10px 3px rgb(60, 60, 60);
 }
 #game-menu #start-game button:hover {
   cursor: pointer;
+  background-color: green;
+  color: white;
 }
 
 #ptop {
@@ -236,9 +239,12 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  box-shadow: 3px 3px 10px 3px rgb(60, 60, 60);
 }
 #game-over #game-content button:hover {
   cursor: pointer;
+  background-color: green;
+  color: white;
 }
 
 #photo-container {
@@ -259,11 +265,11 @@ body {
 @keyframes scoreAnimation {
   0% {
     opacity: 0;
-    transform: translate(180px, 30px);
-    -webkit-transform: translate(180px, 30px);
-    -moz-transform: translate(180px, 30px);
-    -ms-transform: translate(180px, 30px);
-    -o-transform: translate(180px, 30px);
+    transform: translate(180px, 50px);
+    -webkit-transform: translate(180px, 50px);
+    -moz-transform: translate(180px, 50px);
+    -ms-transform: translate(180px, 50px);
+    -o-transform: translate(180px, 50px);
   }
   50% {
     opacity: 1;
@@ -275,11 +281,11 @@ body {
   }
   100% {
     opacity: 0;
-    transform: translate(180px, -30px);
-    -webkit-transform: translate(180px, -30px);
-    -moz-transform: translate(180px, -30px);
-    -ms-transform: translate(180px, -30px);
-    -o-transform: translate(180px, -30px);
+    transform: translate(180px, -20px);
+    -webkit-transform: translate(180px, -20px);
+    -moz-transform: translate(180px, -20px);
+    -ms-transform: translate(180px, -20px);
+    -o-transform: translate(180px, -20px);
   }
 }
 @media screen and (max-width: 768px) {

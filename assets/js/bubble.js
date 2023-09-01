@@ -1,18 +1,20 @@
 function play(){
     document.getElementById("start-game").style.display = "none";
-    
 
-    let timer = 10;
+
+    let timer = 60;
     let score = 0;
     let rnhit = 0;
     let interval; 
     var scorepoints;
-    let backgrounds;
+    var congragulations;
+    var backgrounds;
 
     function backsound(){
         backgrounds = new Audio("./assets/audio/background.mp3")
         backgrounds.play();
     }
+
     
     
 
@@ -28,12 +30,17 @@ function play(){
             } else {
                 clearInterval(interval); // Clear the interval
                 document.querySelector("#btmp").innerHTML = "";
-                document.getElementById("game-over").style.display = "block";
+                document.getElementById("game-over").style.display = "block"; 
+
+                congragulations = new Audio("./assets/audio/congragulations.mp3");
+                // play the audio
+                congragulations.play();
                 document.querySelector("#game-over h2").innerHTML = `Your Score = ${score}`;
             }
         }, 1000)
     }
 // restart the game
+
     document.querySelector("#game-over button").onclick = function() {
         resetGame(); // Reset the game state
         document.getElementById("game-over").style.display = "none";
