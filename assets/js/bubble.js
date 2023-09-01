@@ -2,7 +2,8 @@ function play(){
     let timer = 10;
     let score = 0;
     let rnhit = 0;
-    let interval; // Declare interval variable
+    let interval; 
+  
 
 
     function runTimer() {
@@ -18,9 +19,8 @@ function play(){
                 document.getElementById("game-over").style.display = "block";
                 document.querySelector("#game-over h2").innerHTML = `Your Score = ${score}`;
             }
-        }, 1000);
+        }, 1000)
     }
-
 
     document.querySelector("#game-over button").onclick = function() {
         resetGame(); // Reset the game state
@@ -28,11 +28,9 @@ function play(){
         startgame(); // Start the game again
     };
 
-    // ...
-
     function resetGame() {
         clearInterval(interval); // Clear the interval
-        timer = 10;
+        timer = 60;
         score = 0;
         rnhit = 0;
         document.querySelector("#game-timer").textContent = timer;
@@ -67,14 +65,33 @@ function hitcunt(){
     }
 }
 
+function showScoreAnimation() {
+    var scoreAnimation = document.getElementById("plusten");
+    scoreAnimation.style.display = "block";
+  
+    setTimeout(function() {
+      scoreAnimation.style.display = "none";
+    }, 1000); // Display for 1 second
+  }
+
 function incresescore(){
    document.querySelector("#btmp")
    .addEventListener("click", function(dets){
     if(timer > 0){
         let tomatch = Number(dets.target.textContent);
         if(rnhit == tomatch){
+
+// disply Score animation and play score point sound
+            showScoreAnimation()
             score += 10;
             document.querySelector("#score").textContent = score;
+
+            // create a new audio instance
+            var audio = new Audio("./assets/audio/score.mp3");
+            // play the audio
+            audio.play();
+            
+
             makeBubble();
             hitcunt();
         }

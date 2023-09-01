@@ -56,6 +56,7 @@ body {
 }
 
 .one {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +65,23 @@ body {
   padding: 5%;
   font-size: 1.7rem;
   font-weight: bolder;
+}
+.one #plusten {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  transform: translateX(-50%);
+  transform: scale(1.4);
+  animation: scoreAnimation 1s ease-out;
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
 }
 
 .elem {
@@ -191,6 +209,32 @@ body {
   flex-wrap: wrap;
 }
 
+@keyframes scoreAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(180px, 30px);
+    -webkit-transform: translate(180px, 30px);
+    -moz-transform: translate(180px, 30px);
+    -ms-transform: translate(180px, 30px);
+    -o-transform: translate(180px, 30px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(180px, 0px);
+    -webkit-transform: translate(180px, 0px);
+    -moz-transform: translate(180px, 0px);
+    -ms-transform: translate(180px, 0px);
+    -o-transform: translate(180px, 0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(180px, -30px);
+    -webkit-transform: translate(180px, -30px);
+    -moz-transform: translate(180px, -30px);
+    -ms-transform: translate(180px, -30px);
+    -o-transform: translate(180px, -30px);
+  }
+}
 @media screen and (max-width: 768px) {
   #game-menu {
     height: 90vh;
