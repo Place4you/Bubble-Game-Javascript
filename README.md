@@ -1,6 +1,6 @@
 # Bubble-Game-Javascript
 
-![Bubble Game](/assets/img/thumbnail.JPG)
+![Bubble Game](assets/img/Thumnail.jpg)
 
 ## Overview
 
