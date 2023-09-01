@@ -23,16 +23,16 @@ To play the Bubble game, follow these steps:
 
 The project is organized as follows:
 
-bubble-game/
-|-- Bubble Game.html
-|---assets
-| |--img
-| |-- css/
-| |--|-- styles.scss
-| |-- js/
-| |--|-- bubble.js
-|-- README.md
-
+bubble-game/  
+|-- Bubble Game.html  
+|---assets  
+| |--img / 
+| |-- css/  
+| |--|-- styles.scss//
+| |-- js/  
+| |--|-- bubble.js  
+|-- README.md  
+  
 - **index.html**: The HTML file contains the structure and content of the game.
 - **css/styles.scss**: The SCSS file includes all the styles necessary to create an attractive layout and design.
 - **js/game.js**: The JavaScript file contains the game logic and interactivity.
