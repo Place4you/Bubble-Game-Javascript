@@ -24,7 +24,7 @@ To play the Bubble game, follow these steps:
 The project is organized as follows:
 
 bubble-game/  
-|-- Bubble Game.html  
+|-- Index.html  
 |---assets  
 | |--img / 
 | |-- css/  
