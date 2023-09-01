@@ -256,11 +256,27 @@ body {
 		height: 90vh;
 		overflow: hidden;
 		flex-basis: 100%;
+		#start-game{
+			height: 90vh;
+			overflow: hidden;
+			flex-basis: 100%;
+			text-align: center;
+			h1{
+				font-size: 1rem;
+				
+			}
+		}
 	}
 	#ptop {
 		flex-wrap: wrap;
 		row-gap: 0;
 		padding: 0px 1px;
+	}
+	#btmp{
+		height: 500px;
+		::-webkit-scrollbar{
+			scroll-behavior: auto;
+		}
 	}
 	.one {
 		font-size: 1rem;
