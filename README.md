@@ -26,9 +26,9 @@ The project is organized as follows:
 bubble-game/  
 |-- Index.html  
 |---assets  
-| |--img / 
+| |--img/  
 | |-- css/  
-| |--|-- styles.scss//
+| |--|-- styles.scss  
 | |-- js/  
 | |--|-- bubble.js  
 |-- README.md  
