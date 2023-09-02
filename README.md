@@ -2,6 +2,11 @@
 
 ![Bubble Game](assets/img/Thumnail.jpg)
 
+## Live Demo
+Access the live version of the project: [Netlify Link](https://saadatbubblegame.netlify.app/)
+
+This project is deployed and hosted on Netlify. Click the link above to explore the live version.
+
 ## Overview
 
 This project is a Bubble game developed using JavaScript and SCSS. It is an interactive game where a menu appears at the start. When the user clicks "Play," the game starts with multiple bubbles on the screen. Each bubble has a unique hit number, and when the user hits the bubble with the given number, their score increases by 10. The total time for the game is 30 seconds, and at the end, the user can play again by clicking the "Play again" button.
@@ -26,9 +31,9 @@ The project is organized as follows:
 bubble-game/  
 |-- Index.html  
 |---assets  
-| |--img / 
+| |--img/  
 | |-- css/  
-| |--|-- styles.scss//
+| |--|-- styles.scss  
 | |-- js/  
 | |--|-- bubble.js  
 |-- README.md  
