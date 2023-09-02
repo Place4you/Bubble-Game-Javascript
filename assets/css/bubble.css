@@ -290,7 +290,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   #game-menu {
-    height: 90vh;
     overflow: hidden;
     flex-basis: 100%;
   }
