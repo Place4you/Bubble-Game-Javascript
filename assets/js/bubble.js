@@ -2,7 +2,7 @@ function play(){
     document.getElementById("start-game").style.display = "none";
 
 
-    let timer = 30;
+    let timer = 10;
     let score = 0;
     let rnhit = 0;
     let interval; 
